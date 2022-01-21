@@ -16,13 +16,13 @@ map.addControl(
 );
 
 // GEOCODER SEARCH
-map.addControl(
-  new MapboxGeocoder({
-    accessToken: mapboxgl.accessToken,
-    mapboxgl: mapboxgl,
-  }),
-  "top-right"
-);
+// map.addControl(
+//   new MapboxGeocoder({
+//     accessToken: mapboxgl.accessToken,
+//     mapboxgl: mapboxgl,
+//   }),
+//   "top-right"
+// );
 
 // GEOLOCATION COMPONENT
 map.addControl(
