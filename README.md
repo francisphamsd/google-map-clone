@@ -35,21 +35,25 @@ The Goole Map clone using Mapbox GL JS feature many main function of the actual 
 
 ## My process
 
+For this project, I purely use css, javascript vanilla, and Mapbox plugins to recreate the Google Map clone.
+
 ### Built with
 
+- HTML, CSS
+- Javascript vanilla
 - Mapbox GL JS
 
 ### What I learned
 
-Lorem12
+I learn more about Mapbox GL JS and its plugin. How to combine it to create a complete map.
 
 ### Continued development
 
 In the future, I might add more option to the map such as:
 
-- Convert
-- Adding
-- Adding
+- More map layers
+- Switch between Geocoding search function and map direction function (not both on the map at the same time)
+- The above reason should make the map responsive on multiple devices
 
 ### Useful resources
 
