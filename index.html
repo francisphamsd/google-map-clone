@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Google Map Clone</title>
+    <meta
+      name="viewport"
+      content="initial-scale=1,maximum-scale=1,user-scalable=no"
+    />
+
+    <!-- MAPBOX CDN -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+
+    <!-- MAPBOX DIRECTION PLUGIN -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+      type="text/css"
+    />
+
+    <!-- GEOCODER SEARCH PLUGIN -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    // MAP SECTION
+    <div id="map"></div>
+
+    // MAP LAYER MENU SECTION
+    <div class="map-layer">
+      <button onclick="showLayer()" id="layerToggler">Layer</button>
+      <div id="menu" class="hidden">
+        <label class="menu__label" for="satellite-v9">
+          <input
+            id="satellite-v9"
+            type="radio"
+            name="rtoggle"
+            class="hidden"
+            checked
+          />
+          <span class="radio-btn">
+            <img
+              src="./assets/satellite-layer.png"
+              alt=""
+              class="menu__layer-picture"
+            />
+            <h6>Satellite</h6>
+          </span>
+        </label>
+        <label class="menu__label" for="light-v10">
+          <input
+            id="light-v10"
+            type="radio"
+            name="rtoggle"
+            class="hidden"
+            checked
+          />
+          <span class="radio-btn">
+            <img
+              src="./assets/light-layer.png"
+              alt=""
+              class="menu__layer-picture"
+            />
+            <h6>Light</h6>
+          </span>
+        </label>
+        <label class="menu__label" for="dark-v10">
+          <input
+            id="dark-v10"
+            type="radio"
+            name="rtoggle"
+            class="hidden"
+            checked
+          />
+          <span class="radio-btn">
+            <img
+              src="./assets/dark-layer.png"
+              alt=""
+              class="menu__layer-picture"
+            />
+            <h6>Dark</h6>
+          </span>
+        </label>
+        <label class="menu__label" for="streets-v11">
+          <input
+            id="streets-v11"
+            type="radio"
+            name="rtoggle"
+            class="hidden"
+            checked
+          />
+          <span class="radio-btn">
+            <img
+              src="./assets/street-layer.png"
+              alt=""
+              class="menu__layer-picture"
+            />
+            <h6>Streets</h6>
+          </span>
+        </label>
+        <label class="menu__label" for="outdoors-v11">
+          <input
+            id="outdoors-v11"
+            type="radio"
+            name="rtoggle"
+            class="hidden"
+            checked
+          />
+          <span class="radio-btn">
+            <img
+              src="./assets/outdoor-layer.png"
+              alt=""
+              class="menu__layer-picture"
+            />
+            <h6>Outdoors</h6>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <script src="src/main.js"></script>
+  </body>
+</html>
